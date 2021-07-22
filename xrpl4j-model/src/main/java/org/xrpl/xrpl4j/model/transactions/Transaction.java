@@ -7,6 +7,7 @@ import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableBiMap;
 import com.google.common.primitives.UnsignedInteger;
 import com.google.common.primitives.UnsignedLong;
+import org.checkerframework.checker.nullness.Opt;
 import org.immutables.value.Value.Auxiliary;
 import org.xrpl.xrpl4j.model.client.common.LedgerIndex;
 import org.xrpl.xrpl4j.model.ledger.SignerListObject;
@@ -76,7 +77,7 @@ public interface Transaction {
    * @return The {@link Address} of the account submitting this transaction.
    */
   @JsonProperty("Account")
-  Address account();
+  Optional<Address> account();
 
   /**
    * The type of transaction.
@@ -110,7 +111,7 @@ public interface Transaction {
    * @see "https://xrpl.org/transaction-common-fields.html#auto-fillable-fields"
    */
   @JsonProperty("Sequence")
-  UnsignedInteger sequence();
+  Optional<UnsignedInteger> sequence();
 
   /**
    * Hash value identifying another transaction. If provided, this {@link Transaction} is only valid if the sending
