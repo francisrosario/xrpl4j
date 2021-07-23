@@ -8,6 +8,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import java.util.Optional;
+
 public class AccountSetTests {
 
   @Rule
@@ -27,9 +29,9 @@ public class AccountSetTests {
         .build();
 
     assertThat(accountSet.transactionType()).isEqualTo(TransactionType.ACCOUNT_SET);
-    assertThat(accountSet.account()).isEqualTo(Address.of("rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"));
+    assertThat(accountSet.account()).isEqualTo(Optional.of(Address.of("rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn")));
     assertThat(accountSet.fee().value()).isEqualTo(UnsignedLong.valueOf(12));
-    assertThat(accountSet.sequence()).isEqualTo(UnsignedInteger.valueOf(5));
+    assertThat(accountSet.sequence()).isEqualTo(Optional.of(UnsignedInteger.valueOf(5)));
     assertThat(accountSet.domain()).isNotEmpty().get().isEqualTo("6578616D706C652E636F6D");
     assertThat(accountSet.setFlag()).isNotEmpty().get().isEqualTo(AccountSet.AccountSetFlag.ACCOUNT_TXN_ID);
     assertThat(accountSet.messageKey()).isNotEmpty().get()

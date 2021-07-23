@@ -10,6 +10,9 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.xrpl.xrpl4j.model.transactions.ImmutableEscrowFinish.Builder;
 
+import javax.swing.text.html.Option;
+import java.util.Optional;
+
 /**
  * Unit tests for {@link EscrowFinish}.
  */
@@ -31,8 +34,8 @@ public class EscrowFinishTest {
     assertThat(actual.condition()).isNotPresent();
     assertThat(actual.fulfillment()).isNotPresent();
     assertThat(actual.fee()).isEqualTo(XrpCurrencyAmount.ofDrops(1));
-    assertThat(actual.account()).isEqualTo(Address.of("account"));
-    assertThat(actual.sequence()).isEqualTo(UnsignedInteger.ONE);
+    assertThat(actual.account()).isEqualTo(Optional.of(Address.of("account")));
+    assertThat(actual.sequence()).isEqualTo(Optional.of(UnsignedInteger.ONE));
     assertThat(actual.owner()).isEqualTo(Address.of("owner"));
     assertThat(actual.offerSequence()).isEqualTo(UnsignedInteger.ZERO);
   }
@@ -92,8 +95,8 @@ public class EscrowFinishTest {
         .build();
 
     assertThat(actual.condition()).isPresent();
-    assertThat(actual.account()).isEqualTo(Address.of("account"));
-    assertThat(actual.sequence()).isEqualTo(UnsignedInteger.ONE);
+    assertThat(actual.account()).isEqualTo(Optional.of(Address.of("account")));
+    assertThat(actual.sequence()).isEqualTo(Optional.of(UnsignedInteger.ONE));
     assertThat(actual.owner()).isEqualTo(Address.of("owner"));
     assertThat(actual.offerSequence()).isEqualTo(UnsignedInteger.ZERO);
 

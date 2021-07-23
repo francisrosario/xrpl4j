@@ -8,6 +8,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import java.util.Optional;
+
 public class PaymentChannelTests {
 
   @Rule
@@ -25,7 +27,7 @@ public class PaymentChannelTests {
         .publicKey("32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A")
         .build();
 
-    assertThat(create.account()).isEqualTo(Address.of("rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"));
+    assertThat(create.account()).isEqualTo(Optional.of(Address.of("rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn")));
     assertThat(create.transactionType()).isEqualTo(TransactionType.PAYMENT_CHANNEL_CREATE);
     assertThat(create.amount()).isEqualTo(XrpCurrencyAmount.ofDrops(10000));
     assertThat(create.destination()).isEqualTo(Address.of("rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW"));
@@ -48,7 +50,7 @@ public class PaymentChannelTests {
         .publicKey("32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A")
         .build();
 
-    assertThat(create.account()).isEqualTo(Address.of("rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"));
+    assertThat(create.account()).isEqualTo(Optional.of(Address.of("rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn")));
     assertThat(create.sourceTag()).isNotEmpty().get().isEqualTo(UnsignedInteger.ONE);
     assertThat(create.transactionType()).isEqualTo(TransactionType.PAYMENT_CHANNEL_CREATE);
     assertThat(create.amount()).isEqualTo(XrpCurrencyAmount.ofDrops(10000));
@@ -72,7 +74,7 @@ public class PaymentChannelTests {
         .cancelAfter(UnsignedLong.valueOf(533171558))
         .build();
 
-    assertThat(create.account()).isEqualTo(Address.of("rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"));
+    assertThat(create.account()).isEqualTo(Optional.of(Address.of("rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn")));
     assertThat(create.transactionType()).isEqualTo(TransactionType.PAYMENT_CHANNEL_CREATE);
     assertThat(create.amount()).isEqualTo(XrpCurrencyAmount.ofDrops(10000));
     assertThat(create.destination()).isEqualTo(Address.of("rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW"));
