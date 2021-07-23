@@ -95,7 +95,7 @@ public class EscrowIT extends AbstractIT {
         .fee(feeResult.drops().openLedgerFee())
         .sequence(receiverAccountInfo.accountData().sequence())
         .owner(senderWallet.classicAddress())
-        .offerSequence(result.transaction().sequence())
+        .offerSequence(UnsignedInteger.valueOf(String.valueOf(result.transaction().sequence().get())))
         .signingPublicKey(receiverWallet.publicKey())
         .build();
 
@@ -203,7 +203,7 @@ public class EscrowIT extends AbstractIT {
         .fee(feeResult.drops().openLedgerFee())
         .sequence(senderAccountInfo.accountData().sequence().plus(UnsignedInteger.ONE))
         .owner(senderWallet.classicAddress())
-        .offerSequence(result.transaction().sequence())
+        .offerSequence(UnsignedInteger.valueOf(String.valueOf(result.transaction().sequence().get())))
         .signingPublicKey(senderWallet.publicKey())
         .build();
 
@@ -311,7 +311,7 @@ public class EscrowIT extends AbstractIT {
         .fee(EscrowFinish.computeFee(feeResult.drops().openLedgerFee(), executeEscrowFulfillment))
         .sequence(receiverAccountInfo.accountData().sequence())
         .owner(senderWallet.classicAddress())
-        .offerSequence(result.transaction().sequence())
+        .offerSequence(UnsignedInteger.valueOf(String.valueOf(result.transaction().sequence().get())))
         .signingPublicKey(receiverWallet.publicKey())
         .condition(executeEscrowFulfillment.getDerivedCondition()) // <-- condition and fulfillment are required.
         .fulfillment(executeEscrowFulfillment) // <-- condition and fulfillment are required to finish an escrow
@@ -415,7 +415,7 @@ public class EscrowIT extends AbstractIT {
         .fee(feeResult.drops().openLedgerFee())
         .sequence(senderAccountInfo.accountData().sequence().plus(UnsignedInteger.ONE))
         .owner(senderWallet.classicAddress())
-        .offerSequence(result.transaction().sequence())
+        .offerSequence(UnsignedInteger.valueOf(String.valueOf(result.transaction().sequence().get())))
         .signingPublicKey(senderWallet.publicKey())
         .build();
 
