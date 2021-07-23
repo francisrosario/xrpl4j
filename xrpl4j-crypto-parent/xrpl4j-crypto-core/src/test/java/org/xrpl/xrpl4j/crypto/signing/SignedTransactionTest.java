@@ -1,14 +1,13 @@
 package org.xrpl.xrpl4j.crypto.signing;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 import com.google.common.primitives.UnsignedInteger;
 import org.junit.jupiter.api.Test;
-import org.xrpl.xrpl4j.model.client.transactions.SignedTransaction;
-import org.xrpl.xrpl4j.model.transactions.Address;
-import org.xrpl.xrpl4j.model.transactions.Payment;
-import org.xrpl.xrpl4j.model.transactions.XrpCurrencyAmount;
+import org.xrpl.xrpl4j.model.fl.client.transactions.SignedTransaction;
+import org.xrpl.xrpl4j.model.fl.transactions.Address;
+import org.xrpl.xrpl4j.model.fl.transactions.Payment;
+import org.xrpl.xrpl4j.model.fl.transactions.XrpCurrencyAmount;
 
 /**
  * Unit tests for {@linkn SignedTransaction}.
@@ -17,7 +16,7 @@ class SignedTransactionTest {
 
   @Test
   public void computesCorrectTransactionHash() {
-    org.xrpl.xrpl4j.model.client.transactions.SignedTransaction<Payment> signedTransaction = SignedTransaction.<Payment>builder()
+    SignedTransaction<Payment> signedTransaction = SignedTransaction.<Payment>builder()
       .signedTransaction(
         Payment.builder()
           .account(Address.of("rU6K7V3Po4snVhBBaU29sesqs2qTQJWDw1"))

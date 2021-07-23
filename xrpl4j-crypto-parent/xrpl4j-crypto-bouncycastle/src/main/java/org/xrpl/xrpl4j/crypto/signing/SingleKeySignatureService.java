@@ -21,7 +21,7 @@ import org.xrpl.xrpl4j.keypairs.EcDsaSignature;
 import org.xrpl.xrpl4j.keypairs.HashUtils;
 import org.xrpl.xrpl4j.keypairs.KeyPairService;
 import org.xrpl.xrpl4j.keypairs.Secp256k1;
-import org.xrpl.xrpl4j.model.jackson.ObjectMapperFactory;
+import org.xrpl.xrpl4j.model.fl.jackson.ObjectMapperFactory;
 
 import java.math.BigInteger;
 import java.security.KeyStore;

@@ -2,7 +2,7 @@ package org.xrpl.xrpl4j.codec.addresses;
 
 import com.google.common.primitives.UnsignedInteger;
 import org.immutables.value.Value;
-import org.xrpl.xrpl4j.model.transactions.Address;
+import org.xrpl.xrpl4j.model.fl.transactions.Address;
 
 /**
  * An address on the XRP Ledger represented in Classic Address form.  This form includes a Base58Check encoded

@@ -3,7 +3,7 @@ package org.xrpl.xrpl4j.tests.environment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xrpl.xrpl4j.client.XrplClient;
-import org.xrpl.xrpl4j.model.transactions.Address;
+import org.xrpl.xrpl4j.model.fl.transactions.Address;
 
 /**
  * Abstraction for the XRP Ledger environment that the integration tests talk to. Provides access to resources

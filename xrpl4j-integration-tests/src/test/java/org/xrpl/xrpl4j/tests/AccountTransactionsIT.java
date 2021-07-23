@@ -11,10 +11,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.xrpl.xrpl4j.client.JsonRpcClientErrorException;
 import org.xrpl.xrpl4j.client.XrplClient;
-import org.xrpl.xrpl4j.model.client.accounts.AccountTransactionsRequestParams;
-import org.xrpl.xrpl4j.model.client.accounts.AccountTransactionsResult;
-import org.xrpl.xrpl4j.model.client.common.LedgerIndex;
-import org.xrpl.xrpl4j.model.transactions.Address;
+import org.xrpl.xrpl4j.model.fl.client.accounts.AccountTransactionsRequestParams;
+import org.xrpl.xrpl4j.model.fl.client.accounts.AccountTransactionsResult;
+import org.xrpl.xrpl4j.model.fl.client.common.LedgerIndex;
+import org.xrpl.xrpl4j.model.fl.transactions.Address;
 import org.xrpl.xrpl4j.tests.environment.MainnetEnvironment;
 
 public class AccountTransactionsIT {

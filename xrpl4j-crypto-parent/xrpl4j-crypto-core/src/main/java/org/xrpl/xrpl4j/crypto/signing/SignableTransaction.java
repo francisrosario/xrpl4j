@@ -2,7 +2,7 @@ package org.xrpl.xrpl4j.crypto.signing;
 
 import org.immutables.value.Value;
 import org.xrpl.xrpl4j.codec.addresses.UnsignedByteArray;
-import org.xrpl.xrpl4j.model.transactions.Transaction;
+import org.xrpl.xrpl4j.model.fl.transactions.Transaction;
 
 /**
  * Holds both binary and typed manifestations of an XRPL transaction, for purposes of signing.

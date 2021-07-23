@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.common.io.BaseEncoding;
 import org.junit.Test;
-import org.xrpl.xrpl4j.model.transactions.Address;
+import org.xrpl.xrpl4j.model.fl.transactions.Address;
 
 public class DefaultKeyPairServiceTest {
 

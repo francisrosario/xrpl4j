@@ -9,7 +9,7 @@ import feign.jackson.JacksonEncoder;
 import feign.optionals.OptionalDecoder;
 import okhttp3.HttpUrl;
 import org.xrpl.xrpl4j.client.RetryStatusDecoder;
-import org.xrpl.xrpl4j.model.jackson.ObjectMapperFactory;
+import org.xrpl.xrpl4j.model.fl.jackson.ObjectMapperFactory;
 
 import java.time.Duration;
 import java.util.Objects;

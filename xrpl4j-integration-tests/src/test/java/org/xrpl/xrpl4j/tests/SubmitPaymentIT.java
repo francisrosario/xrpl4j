@@ -4,14 +4,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.xrpl.xrpl4j.client.JsonRpcClientErrorException;
-import org.xrpl.xrpl4j.model.client.accounts.AccountInfoResult;
-import org.xrpl.xrpl4j.model.client.fees.FeeResult;
-import org.xrpl.xrpl4j.model.client.ledger.LedgerRequestParams;
-import org.xrpl.xrpl4j.model.client.ledger.LedgerResult;
-import org.xrpl.xrpl4j.model.client.transactions.SubmitResult;
-import org.xrpl.xrpl4j.model.client.transactions.TransactionResult;
-import org.xrpl.xrpl4j.model.transactions.Payment;
-import org.xrpl.xrpl4j.model.transactions.XrpCurrencyAmount;
+import org.xrpl.xrpl4j.model.fl.client.accounts.AccountInfoResult;
+import org.xrpl.xrpl4j.model.fl.client.fees.FeeResult;
+import org.xrpl.xrpl4j.model.fl.client.ledger.LedgerRequestParams;
+import org.xrpl.xrpl4j.model.fl.client.ledger.LedgerResult;
+import org.xrpl.xrpl4j.model.fl.client.transactions.SubmitResult;
+import org.xrpl.xrpl4j.model.fl.client.transactions.TransactionResult;
+import org.xrpl.xrpl4j.model.fl.transactions.Payment;
+import org.xrpl.xrpl4j.model.fl.transactions.XrpCurrencyAmount;
 import org.xrpl.xrpl4j.wallet.Wallet;
 
 public class SubmitPaymentIT extends AbstractIT {

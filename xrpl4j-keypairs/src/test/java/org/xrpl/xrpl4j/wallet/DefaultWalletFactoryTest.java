@@ -3,7 +3,7 @@ package org.xrpl.xrpl4j.wallet;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
-import org.xrpl.xrpl4j.model.transactions.XAddress;
+import org.xrpl.xrpl4j.model.fl.transactions.XAddress;
 
 @SuppressWarnings("LocalVariableName")
 public class DefaultWalletFactoryTest {

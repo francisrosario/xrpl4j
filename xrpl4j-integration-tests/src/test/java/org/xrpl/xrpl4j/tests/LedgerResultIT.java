@@ -4,9 +4,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.xrpl.xrpl4j.client.JsonRpcClientErrorException;
-import org.xrpl.xrpl4j.model.client.common.LedgerIndex;
-import org.xrpl.xrpl4j.model.client.ledger.LedgerRequestParams;
-import org.xrpl.xrpl4j.model.client.ledger.LedgerResult;
+import org.xrpl.xrpl4j.model.fl.client.common.LedgerIndex;
+import org.xrpl.xrpl4j.model.fl.client.ledger.LedgerRequestParams;
+import org.xrpl.xrpl4j.model.fl.client.ledger.LedgerResult;
 
 /**
  * These tests ensure {@link LedgerResult}s can be constructed from all of the different JSON responses
