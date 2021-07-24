@@ -15,9 +15,9 @@ import org.xrpl.xrpl4j.codec.addresses.VersionType;
 import org.xrpl.xrpl4j.crypto.BcKeyUtils;
 import org.xrpl.xrpl4j.crypto.KeyMetadata;
 import org.xrpl.xrpl4j.crypto.PublicKey;
-import org.fl.xrpl4j.model.transactions.Address;
-import org.fl.xrpl4j.model.transactions.Payment;
-import org.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
+import com.fl.xrpl4j.model.transactions.Address;
+import com.fl.xrpl4j.model.transactions.Payment;
+import com.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
 
 import java.math.BigInteger;
 import java.util.Objects;

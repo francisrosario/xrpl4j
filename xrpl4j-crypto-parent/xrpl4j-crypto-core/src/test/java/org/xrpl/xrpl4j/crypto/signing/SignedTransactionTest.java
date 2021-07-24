@@ -4,10 +4,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.common.primitives.UnsignedInteger;
 import org.junit.jupiter.api.Test;
-import org.fl.xrpl4j.model.client.transactions.SignedTransaction;
-import org.fl.xrpl4j.model.transactions.Address;
-import org.fl.xrpl4j.model.transactions.Payment;
-import org.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
+import com.fl.xrpl4j.model.client.transactions.SignedTransaction;
+import com.fl.xrpl4j.model.transactions.Address;
+import com.fl.xrpl4j.model.transactions.Payment;
+import com.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
 
 /**
  * Unit tests for {@linkn SignedTransaction}.

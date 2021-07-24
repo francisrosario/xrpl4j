@@ -4,16 +4,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.xrpl.xrpl4j.client.JsonRpcClientErrorException;
-import org.fl.xrpl4j.model.client.accounts.AccountInfoResult;
-import org.fl.xrpl4j.model.client.accounts.AccountObjectsResult;
-import org.fl.xrpl4j.model.client.fees.FeeResult;
-import org.fl.xrpl4j.model.client.transactions.SubmitResult;
-import org.fl.xrpl4j.model.client.transactions.TransactionResult;
-import org.fl.xrpl4j.model.ledger.DepositPreAuthObject;
-import org.fl.xrpl4j.model.transactions.AccountSet;
-import org.fl.xrpl4j.model.transactions.DepositPreAuth;
-import org.fl.xrpl4j.model.transactions.Payment;
-import org.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
+import com.fl.xrpl4j.model.client.accounts.AccountInfoResult;
+import com.fl.xrpl4j.model.client.accounts.AccountObjectsResult;
+import com.fl.xrpl4j.model.client.fees.FeeResult;
+import com.fl.xrpl4j.model.client.transactions.SubmitResult;
+import com.fl.xrpl4j.model.client.transactions.TransactionResult;
+import com.fl.xrpl4j.model.ledger.DepositPreAuthObject;
+import com.fl.xrpl4j.model.transactions.AccountSet;
+import com.fl.xrpl4j.model.transactions.DepositPreAuth;
+import com.fl.xrpl4j.model.transactions.Payment;
+import com.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
 import org.xrpl.xrpl4j.wallet.Wallet;
 
 public class DepositPreAuthIT extends AbstractIT {

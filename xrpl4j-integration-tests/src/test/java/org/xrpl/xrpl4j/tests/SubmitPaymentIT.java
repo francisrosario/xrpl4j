@@ -4,14 +4,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.xrpl.xrpl4j.client.JsonRpcClientErrorException;
-import org.fl.xrpl4j.model.client.accounts.AccountInfoResult;
-import org.fl.xrpl4j.model.client.fees.FeeResult;
-import org.fl.xrpl4j.model.client.ledger.LedgerRequestParams;
-import org.fl.xrpl4j.model.client.ledger.LedgerResult;
-import org.fl.xrpl4j.model.client.transactions.SubmitResult;
-import org.fl.xrpl4j.model.client.transactions.TransactionResult;
-import org.fl.xrpl4j.model.transactions.Payment;
-import org.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
+import com.fl.xrpl4j.model.client.accounts.AccountInfoResult;
+import com.fl.xrpl4j.model.client.fees.FeeResult;
+import com.fl.xrpl4j.model.client.ledger.LedgerRequestParams;
+import com.fl.xrpl4j.model.client.ledger.LedgerResult;
+import com.fl.xrpl4j.model.client.transactions.SubmitResult;
+import com.fl.xrpl4j.model.client.transactions.TransactionResult;
+import com.fl.xrpl4j.model.transactions.Payment;
+import com.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
 import org.xrpl.xrpl4j.wallet.Wallet;
 
 public class SubmitPaymentIT extends AbstractIT {

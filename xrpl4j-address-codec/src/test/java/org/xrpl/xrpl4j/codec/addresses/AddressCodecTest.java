@@ -9,7 +9,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.xrpl.xrpl4j.codec.addresses.exceptions.EncodeException;
-import org.fl.xrpl4j.model.transactions.Address;
+import com.fl.xrpl4j.model.transactions.Address;
 
 import java.util.function.Function;
 

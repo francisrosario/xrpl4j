@@ -3,7 +3,7 @@ package org.xrpl.xrpl4j.client.faucet;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.immutables.value.Value.Immutable;
-import org.fl.xrpl4j.model.transactions.Address;
+import com.fl.xrpl4j.model.transactions.Address;
 
 /**
  * Request object for POST requests to the /accounts API on the XRPL faucet.

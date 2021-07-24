@@ -16,12 +16,12 @@ import org.xrpl.xrpl4j.crypto.signing.SignatureService;
 import org.xrpl.xrpl4j.crypto.signing.SignedTransaction;
 import org.xrpl.xrpl4j.keypairs.DefaultKeyPairService;
 import org.xrpl.xrpl4j.keypairs.KeyPairService;
-import org.fl.xrpl4j.model.client.accounts.AccountInfoResult;
-import org.fl.xrpl4j.model.client.fees.FeeResult;
-import org.fl.xrpl4j.model.client.transactions.SubmitResult;
-import org.fl.xrpl4j.model.transactions.Address;
-import org.fl.xrpl4j.model.transactions.Payment;
-import org.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
+import com.fl.xrpl4j.model.client.accounts.AccountInfoResult;
+import com.fl.xrpl4j.model.client.fees.FeeResult;
+import com.fl.xrpl4j.model.client.transactions.SubmitResult;
+import com.fl.xrpl4j.model.transactions.Address;
+import com.fl.xrpl4j.model.transactions.Payment;
+import com.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
 import org.xrpl.xrpl4j.wallet.Wallet;
 
 import java.security.Key;

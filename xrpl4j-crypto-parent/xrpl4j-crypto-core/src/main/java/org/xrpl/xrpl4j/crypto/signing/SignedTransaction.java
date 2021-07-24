@@ -8,8 +8,8 @@ import com.google.common.hash.Hashing;
 import com.google.common.io.BaseEncoding;
 import org.immutables.value.Value;
 import org.xrpl.xrpl4j.codec.addresses.UnsignedByteArray;
-import org.fl.xrpl4j.model.transactions.Hash256;
-import org.fl.xrpl4j.model.transactions.Transaction;
+import com.fl.xrpl4j.model.transactions.Hash256;
+import com.fl.xrpl4j.model.transactions.Transaction;
 
 /**
  * Holds the bytes for a signed XRPL transaction.

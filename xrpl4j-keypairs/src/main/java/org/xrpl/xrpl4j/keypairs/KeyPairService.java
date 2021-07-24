@@ -1,7 +1,7 @@
 package org.xrpl.xrpl4j.keypairs;
 
 import org.xrpl.xrpl4j.codec.addresses.UnsignedByteArray;
-import org.fl.xrpl4j.model.transactions.Address;
+import com.fl.xrpl4j.model.transactions.Address;
 
 /**
  * Interface of a service that can perform the crypto operations necessary to create a wallet,

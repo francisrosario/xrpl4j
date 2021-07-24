@@ -21,11 +21,11 @@ import org.xrpl.xrpl4j.crypto.PublicKey;
 import org.xrpl.xrpl4j.crypto.Seed;
 import org.xrpl.xrpl4j.crypto.ServerSecretSupplier;
 import org.xrpl.xrpl4j.keypairs.KeyPairService;
-import org.fl.xrpl4j.model.flags.Flags;
-import org.fl.xrpl4j.model.transactions.Address;
-import org.fl.xrpl4j.model.transactions.IssuedCurrencyAmount;
-import org.fl.xrpl4j.model.transactions.Payment;
-import org.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
+import com.fl.xrpl4j.model.flags.Flags;
+import com.fl.xrpl4j.model.transactions.Address;
+import com.fl.xrpl4j.model.transactions.IssuedCurrencyAmount;
+import com.fl.xrpl4j.model.transactions.Payment;
+import com.fl.xrpl4j.model.transactions.XrpCurrencyAmount;
 
 import java.util.ArrayList;
 import java.util.List;

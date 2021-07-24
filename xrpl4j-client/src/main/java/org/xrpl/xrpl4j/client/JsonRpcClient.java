@@ -14,8 +14,8 @@ import feign.optionals.OptionalDecoder;
 import okhttp3.HttpUrl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.fl.xrpl4j.model.client.XrplResult;
-import org.fl.xrpl4j.model.jackson.ObjectMapperFactory;
+import com.fl.xrpl4j.model.client.XrplResult;
+import com.fl.xrpl4j.model.jackson.ObjectMapperFactory;
 
 import java.time.Duration;
 import java.util.Objects;

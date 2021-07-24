@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.common.io.BaseEncoding;
 import org.junit.Test;
-import org.fl.xrpl4j.model.transactions.Address;
+import com.fl.xrpl4j.model.transactions.Address;
 
 public class Secp256k1KeyPairServiceTest {
 

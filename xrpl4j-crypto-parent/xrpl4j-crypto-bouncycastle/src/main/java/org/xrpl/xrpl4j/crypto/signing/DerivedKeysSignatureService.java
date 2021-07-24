@@ -17,7 +17,7 @@ import org.xrpl.xrpl4j.crypto.ServerSecretSupplier;
 import org.xrpl.xrpl4j.keypairs.DefaultKeyPairService;
 import org.xrpl.xrpl4j.keypairs.KeyPair;
 import org.xrpl.xrpl4j.keypairs.KeyPairService;
-import org.fl.xrpl4j.model.transactions.Transaction;
+import com.fl.xrpl4j.model.transactions.Transaction;
 
 import java.util.Arrays;
 import java.util.Objects;

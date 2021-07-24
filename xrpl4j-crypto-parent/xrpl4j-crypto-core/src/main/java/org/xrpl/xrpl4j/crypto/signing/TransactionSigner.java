@@ -1,7 +1,7 @@
 package org.xrpl.xrpl4j.crypto.signing;
 
 import org.xrpl.xrpl4j.crypto.KeyMetadata;
-import org.fl.xrpl4j.model.transactions.Transaction;
+import com.fl.xrpl4j.model.transactions.Transaction;
 
 /**
  * Defines how to sign an XRPL transaction.
