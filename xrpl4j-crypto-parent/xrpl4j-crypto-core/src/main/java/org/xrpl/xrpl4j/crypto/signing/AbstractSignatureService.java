@@ -7,7 +7,7 @@ import org.xrpl.xrpl4j.crypto.KeyMetadata;
 import org.xrpl.xrpl4j.crypto.KeyStoreType;
 import org.xrpl.xrpl4j.crypto.PublicKey;
 import org.xrpl.xrpl4j.keypairs.KeyPairService;
-import org.xrpl.xrpl4j.model.fl.transactions.Transaction;
+import org.fl.xrpl4j.model.transactions.Transaction;
 
 import java.util.Objects;
 

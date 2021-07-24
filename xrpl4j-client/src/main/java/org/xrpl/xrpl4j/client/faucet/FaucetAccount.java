@@ -4,7 +4,7 @@ package org.xrpl.xrpl4j.client.faucet;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.immutables.value.Value;
-import org.xrpl.xrpl4j.model.fl.transactions.Address;
+import org.fl.xrpl4j.model.transactions.Address;
 
 import java.util.Optional;
 

@@ -4,7 +4,7 @@ import okhttp3.HttpUrl;
 import org.xrpl.xrpl4j.client.XrplClient;
 import org.xrpl.xrpl4j.client.faucet.FaucetClient;
 import org.xrpl.xrpl4j.client.faucet.FundAccountRequest;
-import org.xrpl.xrpl4j.model.fl.transactions.Address;
+import org.fl.xrpl4j.model.transactions.Address;
 
 /**
  * XRPL testnet environment.

@@ -1,8 +1,8 @@
 package org.xrpl.xrpl4j.wallet;
 
 import org.immutables.value.Value;
-import org.xrpl.xrpl4j.model.fl.transactions.Address;
-import org.xrpl.xrpl4j.model.fl.transactions.XAddress;
+import org.fl.xrpl4j.model.transactions.Address;
+import org.fl.xrpl4j.model.transactions.XAddress;
 
 import java.util.Optional;
 

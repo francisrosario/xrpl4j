@@ -6,7 +6,7 @@ import org.bouncycastle.crypto.Signer;
 import org.bouncycastle.crypto.digests.RIPEMD160Digest;
 import org.xrpl.xrpl4j.codec.addresses.AddressCodec;
 import org.xrpl.xrpl4j.codec.addresses.UnsignedByteArray;
-import org.xrpl.xrpl4j.model.fl.transactions.Address;
+import org.fl.xrpl4j.model.transactions.Address;
 
 import java.security.SecureRandom;
 

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.node.TextNode;
 import org.xrpl.xrpl4j.codec.addresses.AddressCodec;
 import org.xrpl.xrpl4j.codec.addresses.UnsignedByteArray;
 import org.xrpl.xrpl4j.codec.binary.serdes.BinaryParser;
-import org.xrpl.xrpl4j.model.fl.transactions.Address;
+import org.fl.xrpl4j.model.transactions.Address;
 
 /**
  * Codec for XRPL AccountID type.

@@ -2,7 +2,7 @@ package org.xrpl.xrpl4j.client;
 
 import com.google.common.annotations.Beta;
 import okhttp3.HttpUrl;
-import org.xrpl.xrpl4j.model.fl.client.admin.AcceptLedgerResult;
+import org.fl.xrpl4j.model.client.admin.AcceptLedgerResult;
 
 /**
  * A client that can call Rippled Admin API methods. @see "https://xrpl.org/admin-rippled-methods.html".

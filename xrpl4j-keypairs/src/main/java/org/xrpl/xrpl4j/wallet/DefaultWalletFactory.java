@@ -4,7 +4,7 @@ import org.xrpl.xrpl4j.codec.addresses.AddressCodec;
 import org.xrpl.xrpl4j.keypairs.DefaultKeyPairService;
 import org.xrpl.xrpl4j.keypairs.KeyPair;
 import org.xrpl.xrpl4j.keypairs.KeyPairService;
-import org.xrpl.xrpl4j.model.fl.transactions.Address;
+import org.fl.xrpl4j.model.transactions.Address;
 
 /**
  * Default implementation of {@link WalletFactory}.

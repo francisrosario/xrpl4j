@@ -5,12 +5,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 import com.google.common.primitives.UnsignedInteger;
 import org.junit.jupiter.api.Test;
 import org.xrpl.xrpl4j.client.JsonRpcClientErrorException;
-import org.xrpl.xrpl4j.model.fl.client.accounts.AccountInfoResult;
-import org.xrpl.xrpl4j.model.fl.client.fees.FeeResult;
-import org.xrpl.xrpl4j.model.fl.client.transactions.SubmitResult;
-import org.xrpl.xrpl4j.model.fl.flags.Flags.AccountRootFlags;
-import org.xrpl.xrpl4j.model.fl.transactions.AccountSet;
-import org.xrpl.xrpl4j.model.fl.transactions.AccountSet.AccountSetFlag;
+import org.fl.xrpl4j.model.client.accounts.AccountInfoResult;
+import org.fl.xrpl4j.model.client.fees.FeeResult;
+import org.fl.xrpl4j.model.client.transactions.SubmitResult;
+import org.fl.xrpl4j.model.flags.Flags.AccountRootFlags;
+import org.fl.xrpl4j.model.transactions.AccountSet;
+import org.fl.xrpl4j.model.transactions.AccountSet.AccountSetFlag;
 import org.xrpl.xrpl4j.wallet.Wallet;
 
 import java.util.Objects;

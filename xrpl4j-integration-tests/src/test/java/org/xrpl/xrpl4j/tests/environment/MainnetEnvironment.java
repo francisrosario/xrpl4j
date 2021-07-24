@@ -2,7 +2,7 @@ package org.xrpl.xrpl4j.tests.environment;
 
 import okhttp3.HttpUrl;
 import org.xrpl.xrpl4j.client.XrplClient;
-import org.xrpl.xrpl4j.model.fl.transactions.Address;
+import org.fl.xrpl4j.model.transactions.Address;
 
 /**
  * XRPL mainnet environment.
